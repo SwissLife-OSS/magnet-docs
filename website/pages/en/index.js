@@ -36,10 +36,12 @@ class HomeSplash extends React.Component {
     );
 
     const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        {siteConfig.title}
+      <div className="projectTitle">
+        <h2>
+          {siteConfig.title}
+        </h2>
         <small>{siteConfig.tagline}</small>
-      </h2>
+      </div>
     );
 
     const PromoSection = props => (
@@ -52,7 +54,7 @@ class HomeSplash extends React.Component {
 
     const Button = props => (
       <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
+        <a className={props.className} href={props.href} target={props.target}>
           {props.children}
         </a>
       </div>
@@ -61,11 +63,11 @@ class HomeSplash extends React.Component {
     return (
       <SplashMagnetContainer>
         <div className="inner">
-          <MagnetLogo img_src={`${baseUrl}`} />
+          <MagnetLogo img_src={`${baseUrl}img/logo_sl_magnet.svg`} />
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl("get-started")}>Get Started</Button>
-            <Button href={docUrl("introduction")}>Learn More</Button>
+            <Button className="button button-primary" href={docUrl("get-started")}>Get Started</Button>
+            <Button className="button button-secondary" href={docUrl("introduction")}>Learn More</Button>
           </PromoSection>
         </div>
       </SplashMagnetContainer>

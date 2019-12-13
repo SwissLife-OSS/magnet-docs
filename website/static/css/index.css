@@ -1,14 +1,12 @@
-
-.homeContainer .section.logo {
+.homeContainer .section.logo img {
   height: 160px;
-  position: relative;
-  top: -50px;
 }
 .homeContainer .projectTitle {
   color: #fff;
 }
 
-.pluginWrapper.buttonWrapper>.button {
+.pluginWrapper.buttonWrapper>.button,
+.pluginWrapper.buttonWrapper>.button.button-primary {
   background-color: #d82034;
   color: #fff;
   font-size: 25px;
@@ -17,8 +15,17 @@
   padding: 15px 32px;
 }
 
-.pluginWrapper.buttonWrapper>.button:hover {
+.pluginWrapper.buttonWrapper>.button:hover,
+.pluginWrapper.buttonWrapper>.button.button-primary:hover {
   background: #a11c36;
+}
+
+
+.pluginWrapper.buttonWrapper>.button.button-secondary {
+  background-color: #022f51;
+}
+.pluginWrapper.buttonWrapper>.button.button-secondary:hover {
+  background: #022338;
 }
 
 .mainContainer .darkBackground h2 p {

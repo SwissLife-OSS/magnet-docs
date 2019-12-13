@@ -19,6 +19,8 @@
         url("../fonts/737655.svg#87fa4160_5806_4ff6_b3de_a97bda1ade77") format("svg");
 }
 
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 body {
     font-family: "Calibri W02 Light", Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
@@ -34,6 +36,9 @@ body {
 
 .fixedHeaderContainer header .headerTitleWithLogo {
     white-space: nowrap;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: #022f51;
 }
 
 .fixedHeaderContainer a,
@@ -82,18 +87,31 @@ input#search_input_react {
 
 .homeContainer {
     background-color: #353535;
-    background: url("../img/bg_motherboard.jpg") center center repeat-x;
+    background: url("../img/bg_particles.jpg") center center repeat-x;
     color: #ffffff;
 }
 
-.homeContainer .projectTitle {
-    color: #ffffff;
+.homeContainer .projectTitle h2,
+.homeContainer .projectTitle small {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
 }
+.homeContainer .projectTitle h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #022f51;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00cfe5, 0 0 40px #00cfe5, 0 0 50px #005493, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+.homeContainer .projectTitle small {
+    color: #022f51;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #00cfe5, 0 0 40px #00cfe5, 0 0 50px #005493, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
 
 .homeContainer.homeSnapshooterContainer {
     background-color: #434546;
-    background: url("../img/bg_motherboard.jpg") center center no-repeat;
+    background: url("../img/bg_particles.jpg") center center no-repeat;
     background-size: cover;
 }
 

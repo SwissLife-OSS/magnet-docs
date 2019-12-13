@@ -67,7 +67,7 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/logo_sl_mongo_extensions.png",
+  headerIcon: "img/logo_sl_magnet.svg",
   footerIcon: "img/logo_sl_oss.svg",
   favicon: "img/favicon.png",
 
