@@ -78,6 +78,9 @@ const siteConfig = {
   },
 
   /* Custom fonts for website */
+  stylesheets: [
+    "https://fonts.googleapis.com/css?family=Righteous&display=swap"
+  ],
   /*
   fonts: {
     myFont: [
